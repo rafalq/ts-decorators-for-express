@@ -3,7 +3,7 @@
     {
       "files": "**/*.ts",
       "options": {
-        "semi": false,
+        "semi": true,
         "singleQuote": true
       }
     }

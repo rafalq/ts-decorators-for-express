@@ -1,10 +1,11 @@
-import { Router, Request, Response, NextFunction } from 'express'
-import { formTemplate } from '../templates/index.js'
+import { Request, Response } from 'express';
+import { get, controller } from './decorators/index.js';
+import { formTemplate } from '../templates/index.js';
 
-// @controller('/')
+@controller('')
 class LoginController {
-  // @get('/login')
+  @get('/login')
   getLogin(req: Request, res: Response): void {
-    res.send(formTemplate)
+    res.send(formTemplate);
   }
 }
